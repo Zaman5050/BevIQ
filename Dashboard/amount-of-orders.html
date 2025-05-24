@@ -1,0 +1,350 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BevIQ-Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+
+
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li class="active">
+                                <a href="inventory.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-0.png">
+                                    <span>dashboard</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="index.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-1.png">
+                                    <span>Business</span>
+                                </a>
+                             
+                            </li>
+                            <li>
+                                <a href="add-product.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-2.png">
+                                    <span>Products</span>
+                                </a>
+                              
+                            </li>
+                            <li>
+                                <a href="account.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-4.png">
+                                    <span>Accounts</span>
+                                </a>
+                               
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-6 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left disAble">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="search-box pull-left">
+                            <form action="#">
+                                <i class="fa fa-search"></i>
+                                <input type="text" name="search" placeholder="Search" required>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-container">
+                        <button class="menu-button"><span class="title">Lo Siento Tequila</span><i class="fa fa-chevron-down"></i>
+                            <img src="assets/images/profile.png"></button>
+                        <div class="menu-dropdown">
+                          <div class="content">
+                            <ul>
+                              <li>Account Settings</li>
+                              <li>Profile</li>
+                              <li>Logout</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- profile info & task notification -->
+                   
+                </div>
+            </div>
+            <!-- header area end -->
+
+            <div class="main-content-inner">
+                <div class="outerDiv">
+                    <h1>Create Promotion</h1>
+                    <div class="navBtns actionLinks ">
+                        <a>Duplicate</a>
+                        <a>Deactivate</a>
+                        <a>Share Link</a>
+                    </div>
+                </div>
+                <div class="wrapPer amountOrder">
+                    <div class="desktopVersion saleRep amountOrder">
+                        <div class="card-one blockTwo">
+                            <h3>Amount of Orders</h3>
+                            <form>
+                                <div class="formBlock" style="padding-bottom: 20px;">
+                                    <div class="form-group">
+                                        <label>Promtion Title</label>
+                                        <input type="text" placeholder="Please Enter Your Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Please Enter Your Address">
+                                    </div>
+                                    <div class="inputRadio" style="display: flex;flex: 0 0 50%; max-width: 50%;">
+                                        <input id="check" name="" type="checkbox" value="yes">
+                                        <label for="check" style="margin-top: 2px; margin-bottom: 0px;">Apply to All</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Sales Rep</label>
+                                            <select>
+                                                <option value="1">Nick Greeninger</option>
+                                                <option value="2">Off Premise</option>
+                                            </select>
+                                    </div>
+                                
+                                </div> 
+                            </form>
+                        </div>
+                        
+                        <div class="card-one blockTwo custBuy">
+                            <h3>Customer Buys</h3>
+                            <form>
+                                <div class="formBlock" style="padding-bottom: 20px;">
+                                    <div class="form-group">
+                                        <label style="visibility: hidden;">das</label>
+                                        <div class="promtBtns">
+                                            <button>
+                                                Percentage
+                                            </button>
+                                            <button>
+                                                Fixed Amount
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Percentage</label>
+                                        <input type="text" placeholder="Please Enter Your Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Applies To</label>
+                                        <select>
+                                            <option value="1">Specific Products</option>
+                                            <option value="2">Off Premise</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Choose Product</label>
+                                        <input type="text" placeholder="Please Enter Your Address">
+                                    </div>
+                                    <div class="inputRadio" style="display: flex;flex: 0 0 50%; max-width: 50%;">
+                                        <input id="check" name="" type="checkbox" value="yes">
+                                        <label for="check" style="margin-top: 2px; margin-bottom: 0px;">Apply Once per order</label>
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="card-one blockTwo ">
+                            <h3>Minimum Purchase Requirement </h3>
+                            <form>
+                                <div class="formBlock radioBttns">
+                                    <div class="radioBtn" style="display: flex;flex: 0 0 50%; max-width: 50%;flex-direction: column;">
+                                        <input type="radio" id="test1" name="radio-group" >
+                                        <label for="test1">No Minimum Requirements</label>
+                                       
+                                    </div>
+                                    <div class="radioBtn" style="display: flex;flex: 0 0 50%; max-width: 50%; flex-direction: column;">
+                                        <input type="radio" id="test2" name="radio-group" >
+                                        <label for="test2">Minimum Purchase Amount(USD)</label>
+                                        <div class="innerTextfield" style="margin-left:30px;width: 220px;">
+                                            <input type="text" >
+                                            <span style="display: block;color: #E35D5D;font-size: 12px;padding-top: 10px;padding-bottom: 10px;">
+                                                <img src="assets/images/i-icon.png">
+                                                Minimum Purchase Can’t be blanked
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="radioBtn" style="display: flex;flex: 0 0 50%; max-width: 50%;flex-direction: column;">
+                                        <input type="radio" id="test3" name="radio-group" >
+                                        <label for="test3">Minimum Quantity</label>
+                                        <div class="innerTextfield" style="margin-left:30px;width: 220px;">
+                                            <input type="text" >
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> 
+                        </div>
+                        <div class="card-one blockTwo ">
+                            <h3>Active Dates</h3>
+                            <form>
+                                <div class="formBlock" style="padding-bottom: 20px;">
+                                    
+                                    <div class="form-group">
+                                        <label>Active Form</label>
+                                        <div class="datepicker date input-group">
+                                            <input type="text" placeholder="MM/DD/YYYY" class="form-control" id="fecha1" style="border: 1px solid #A9A9A9;
+                                            border-radius: 6px;">
+                                            <div class="input-group-append">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Active To</label>
+                                        <div class="datepicker date input-group">
+                                            <input type="text" placeholder="MM/DD/YYYY" class="form-control" id="fecha1" style="border: 1px solid #A9A9A9;
+                                            border-radius: 6px;">
+                                            <div class="input-group-append">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                    <div class="leftSidebr sideBar">
+                            <div class="card-one blockTwo ">
+                                <h3>Active Dates</h3>
+                                <form>
+                                    <div class="formBlock" style="padding-bottom: 20px;">
+                                        
+                                        <div class="form-group">
+                                            <label>Sales Rep</label>
+                                                <select>
+                                                    <option value="1">Nick Greeninger</option>
+                                                    <option value="2">Off Premise</option>
+                                                </select>
+                                        </div>  
+                                    
+                                    </div> 
+                                    
+                                </form>
+                            </div>
+                            <div class="card-one blockTwo" style="margin-top: 20px;" >
+                                <h3>Summary</h3>
+                                
+                                <ul>
+                                    <li>On Premise</li>
+                                    <li>All Locations</li>
+                                    <li>10% off All Products</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="formDiv">
+                    <a href="inventory-lists.html" class="subBtn" type="submit">Save Promotion</a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+ 
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(function () {
+        $('.datepicker').datepicker({
+        language: "es",
+        autoclose: true,
+        format: "dd/mm/yyyy"
+        });
+        });
+    </script>
+    <script>
+        $(function() {
+  
+  $('.dropdown > .caption').on('click', function() {
+    $(this).parent().toggleClass('open');
+  });
+  
+  $('.dropdown > .list > .item').on('click', function() {
+    $('.dropdown > .list > .item').removeClass('selected');
+    $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text( $(this).text() );
+  });
+  
+  $(document).on('keyup', function(evt) {
+    if ( (evt.keyCode || evt.which) === 27 ) {
+      $('.dropdown').removeClass('open');
+    }
+  });
+  
+  $(document).on('click', function(evt) {
+    if ( $(evt.target).closest(".dropdown > .caption").length === 0 ) {
+      $('.dropdown').removeClass('open');
+    }
+  });
+  
+});
+var menuButton = document.querySelector(".menu-button");
+
+ menuButton.addEventListener("click", function(event) {
+   event.preventDefault();
+   var parent = document.querySelector(".menu-container");
+   if (parent.classList.contains("open")) {
+     parent.classList.remove("open");
+   } else {
+     parent.classList.add("open");
+   }
+});
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+    </script>
+</body>
+
+</html>

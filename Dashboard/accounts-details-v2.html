@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BevIQ-Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li class="active">
+                                <a href="inventory.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-0.png">
+                                    <span>dashboard</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="index.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-1.png">
+                                    <span>Business</span>
+                                </a>
+                             
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-2.png">
+                                    <span>Products</span>
+                                </a>
+                              
+                            </li>
+                            <li>
+                                <a href="account-2.html" aria-expanded="true">
+                                    <img src="assets/images/icon/icon-4.png">
+                                    <span>Accounts</span>
+                                </a>
+                               
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-6 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left disAble">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="search-box pull-left">
+                            <form action="#">
+                                <i class="fa fa-search"></i>
+                                <input type="text" name="search" placeholder="Search" required>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-container">
+                        <button class="menu-button"><span class="title">Lo Siento Tequila</span><i class="fa fa-chevron-down"></i>
+                            <img src="assets/images/profile.png"></button>
+                        <div class="menu-dropdown">
+                          <div class="content">
+                            <ul>
+                              <li>Account Settings</li>
+                              <li>Profile</li>
+                              <li>Logout</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- profile info & task notification -->
+                   
+                </div>
+            </div>
+            <!-- header area end -->
+
+            <div class="main-content-inner accountLists accountDetails accountVtwo">
+                <div class="outerDiv">
+                    <h1 style="color: #7E7E7E;">Accounts <img src="assets/images/arrow-rite.png"> <span style="color: #292929;font-size: 22px;font-weight: 700;">BevMo</span></h1>
+                    <div class="navBtns">
+                        <a class="addInven addNewp" href="inventory.html">ADD NEW PRODUCT</a>
+                        <a class="addInven" href="inventory.html">IMPORT CSV</a>
+                    </div>
+                </div>
+                <div class="outerBlocks">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                  <div class="firstBlock">
+                                        <div class="fbImg">
+                                            <div class="fbiBox">
+                                                <img src="assets/images/BevLogo.png">
+                                            </div>
+                                        </div>
+                                        <div class="fbLeft">
+                                            <h3>BevMo</h3>
+                                            <label>233 Santa Monica Blvd,
+                                                West Hollywood, CA 90012
+                                                (831) 234-2334</label>
+                                        </div>
+                                        <div class="lifeRev">
+                                            <label>Lifetime Revenue</label>
+                                            <span>$143K</span>
+                                        </div>
+                                        <div class="totalOrder">
+                                            <label>Total Orders</label>
+                                            <span>1.2K</span>
+                                        </div>
+                                  </div>
+
+                                  <div class="card-one defaultScreen">
+                                    <div class="co-Inner">
+                                        <img src="assets/images/productImg.png">
+                                        <a data-toggle="modal" data-target="#addLocation">Place Order for New Products</a>
+                                    </div>
+                            </div>
+
+
+                                <div class="tableBlock">
+                                    <div class="table-responsive">
+                                        <table id="example" class="display" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Account Name</th>
+                                                    <th>State</th>
+                                                    <th>Account Type</th>
+                                                    <th>TPS</th>
+                                                    <th>Sales Rep</th>
+                                                    <th>Product Category</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                    
+                                            <tbody>
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td> Tequila Reposado</td>
+                                                    <td>North California</td>
+                                                    <td>On Premisis</td>
+                                                    <td>767</td>
+                                                    <td>Nick Greeninger</td>
+                                                    <td>Spirits</td>
+                                                    <td>
+                                                        <div class="outerdIv">
+                                                            <div class="innerDiv">
+                                                                <ul>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/Edit.png"></span><span>Edit</span></li>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/vector.png"></span><span>Delete</span></li>                                                      
+                                                                </ul>
+                                                            </div>
+                                                        
+                                                        <a class="clickDots"><img src="assets/images/dotted.png"></a>
+                                                    </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td>Lo Siento Tequila Reposado</td>
+                                                    <td>ST3423</td>
+                                                    <td>$34.99</td>
+                                                    <td>$19.34</td>
+                                                    <td>32%</td>
+                                                    <td>1233 cases</td>
+                                                    <td>
+                                                        <div class="outerdIv">
+                                                            <div class="innerDiv">
+                                                                <ul>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/Edit.png"></span><span>Edit</span></li>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/vector.png"></span><span>Delete</span></li>                                                      
+                                                                </ul>
+                                                            </div>
+                                                        
+                                                        <a class="clickDots"><img src="assets/images/dotted.png"></a>
+                                                    </div>
+                                                    </td>
+            
+                                                </tr>
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td>Lo Siento Tequila Reposado</td>
+                                                    <td>ST3423</td>
+                                                    <td>$34.99</td>
+                                                    <td>$19.34</td>
+                                                    <td>32%</td>
+                                                    <td>1233 cases</td>
+                                                    <td>
+                                                        <div class="outerdIv">
+                                                            <div class="innerDiv">
+                                                                <ul>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/Edit.png"></span><span>Edit</span></li>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/vector.png"></span><span>Delete</span></li>                                                      
+                                                                </ul>
+                                                            </div>
+                                                        
+                                                        <a class="clickDots"><img src="assets/images/dotted.png"></a>
+                                                    </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td>Lo Siento Tequila Reposado</td>
+                                                    <td>ST3423</td>
+                                                    <td>$34.99</td>
+                                                    <td>$19.34</td>
+                                                    <td>32%</td>
+                                                    <td>1233 cases</td>
+                                                    <td>
+                                                        <div class="outerdIv">
+                                                            <div class="innerDiv">
+                                                                <ul>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/Edit.png"></span><span>Edit</span></li>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/vector.png"></span><span>Delete</span></li>                                                      
+                                                                </ul>
+                                                            </div>
+                                                        
+                                                        <a class="clickDots"><img src="assets/images/dotted.png"></a>
+                                                    </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td>Lo Siento Tequila Reposado</td>
+                                                    <td>ST3423</td>
+                                                    <td>$34.99</td>
+                                                    <td>$19.34</td>
+                                                    <td>32%</td>
+                                                    <td>1233 cases</td>
+                                                    <td>
+                                                        <div class="outerdIv">
+                                                            <div class="innerDiv">
+                                                                <ul>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/Edit.png"></span><span>Edit</span></li>
+                                                                    <li class="butnTog"><span class="img1"><img src="assets/images/vector.png"></span><span>Delete</span></li>                                                      
+                                                                </ul>
+                                                            </div>
+                                                        
+                                                        <a class="clickDots"><img src="assets/images/dotted.png"></a>
+                                                    </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td align="middle" width="6%"><img src="assets/images/item.png"></td>
+                                                    <td>Lo Siento Tequila Reposado</td>
+                                                    <td>ST3423</td>
+                                                    <td>$34.99</td>
+                                                    <td>$19.34</td>
+                                                    <td>32%</td>
+                                                    <td>1233 cases</td>
+                                                    <td><a><img src="assets/images/dotted.png"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="lastBlock accountBuyer">
+                                    <div class="abRow">
+                                        <label>Account Buyer</label>
+                                        <a>Edit</a>
+                                    </div>
+                                    <div class="abTwo">
+                                        <img src="assets/images/infoLogo.png">
+                                        <div class="abtInfo">
+                                            <label>Ron Weasley</label>
+                                            <span>ron@bevmo.com
+                                                (231) 232-2333</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="lastBlock accountBuyer brandRep">
+                                    <div class="abRow">
+                                        <label>Brand Rep</label>
+                                        <a>Edit Reps for this Account</a>
+                                    </div>
+                                    <div class="abRow">
+                                        <label>Distributor Rep</label>
+                                        <a>Edit Reps for this Account</a>
+                                    </div>
+                                </div>
+
+                                <div class="lastBlock accountBuyer brandRep">
+                                    <div class="abRow">
+                                        <label>Timeline</label>
+                                        <p>No History Found</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="addLocation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog addPopup" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Place Order for New Products</h5>
+                                        <div class="btnGroups">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">Cancel</span>
+                                            </button>
+                                            <button >
+                                                <span>Save and Done</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="bodyPopUp">
+                                            <div class="orderNew">
+                                                <div class="formBlock" >
+                                                    <div class="form-group">
+                                                        <label>Product Name</label>
+                                                        <input type="text" placeholder="Please Enter Your Address">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Quantity</label>
+                                                        <input type="text" placeholder="Please Enter Your Address">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Revenue</label>
+                                                        <input type="text" placeholder="Please Enter Your Address">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Sales Rep</label>
+                                                            <select style="display: none;">
+                                                                <option value="1">Nick Greeninger</option>
+                                                                <option value="2">Off Premise</option>
+                                                            </select><div class="nice-select" tabindex="0"><span class="current">Nick Greeninger</span><ul class="list"><li data-value="1" class="option selected">Nick Greeninger</li><li data-value="2" class="option">Off Premise</li></ul></div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+
+                                        </div>
+                                        <div class="popGrpbtns">
+                                            <a>SAVE AND CLOSE</a>
+                                            <a>SEND PO TO DISTRIBUTOR REP</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+      
+    </div>
+ 
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.js"></script>
+<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+  
+  $('.dropdown > .caption').on('click', function() {
+    $(this).parent().toggleClass('open');
+  });
+  
+  $('.dropdown > .list > .item').on('click', function() {
+    $('.dropdown > .list > .item').removeClass('selected');
+    $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').text( $(this).text() );
+  });
+  
+  $(document).on('keyup', function(evt) {
+    if ( (evt.keyCode || evt.which) === 27 ) {
+      $('.dropdown').removeClass('open');
+    }
+  });
+  
+  $(document).on('click', function(evt) {
+    if ( $(evt.target).closest(".dropdown > .caption").length === 0 ) {
+      $('.dropdown').removeClass('open');
+    }
+  });
+  
+});
+var menuButton = document.querySelector(".menu-button");
+
+ menuButton.addEventListener("click", function(event) {
+   event.preventDefault();
+   var parent = document.querySelector(".menu-container");
+   if (parent.classList.contains("open")) {
+     parent.classList.remove("open");
+   } else {
+     parent.classList.add("open");
+   }
+});
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+$(document).ready(function() {
+  $('#check').click(function() {
+    $(this).parent('.form-group').toggleClass('active');
+  });
+});
+
+$(document).ready(function() {
+  $('#variants').click(function() {
+    $(this).parent('.form-group').toggleClass('active');
+  });
+});
+    </script>
+    <script>
+        $(document).ready(function() {
+  
+ 
+  
+  var table = $('#example').DataTable({ 
+        select: false,
+       
+    });//End of create main table
+
+  
+});
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+          jQuery("a.clickDots").click(function() {
+              jQuery(this).parent().toggleClass("highlight"); // Toggle class on parent element
+          });
+      });
+      </script>
+</body>
+
+</html>
